@@ -11,6 +11,8 @@ Welcome to the Code Scanning JavaScript Tutorial! This tutorial will take you th
 5. Edit Line 264 of `index.js` and commit this to a new branch
 
 OLD: `var srcpath = path.join(cwd, path.join('/', header.linkname))`
+
 NEW: `var srcpath = path.resolve(cwd, header.linkname)`
 
 6. Create a Pull Request to `main` from the new branch
+7. Allow CodeQL scan to complete for the PR
